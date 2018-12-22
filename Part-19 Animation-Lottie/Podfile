@@ -1,0 +1,9 @@
+platform :ios, '11.0'
+
+target 'Part-19 Animation-Lottie' do
+  use_frameworks!
+
+  # Pods for Part-19 Animation-Lottie
+  pod 'lottie-ios'
+
+end
