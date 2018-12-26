@@ -13,4 +13,11 @@ class FourthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    
+   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let desVC = segue.destination as! FirstViewController
+        desVC.passedDataString = "I passed the data!"
+    
+    }
 }

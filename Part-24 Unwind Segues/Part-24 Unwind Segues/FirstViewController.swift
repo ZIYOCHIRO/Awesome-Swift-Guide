@@ -9,10 +9,15 @@
 import UIKit
 
 class FirstViewController: UIViewController {
+    
+    @IBOutlet weak var showPassedDataLabel: UILabel!
+    
+    var passedDataString = "Let's get started!"
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        showPassedDataLabel.text = passedDataString
     }
 
     @IBAction func unwindToOne(_ sender: UIStoryboardSegue) { }
